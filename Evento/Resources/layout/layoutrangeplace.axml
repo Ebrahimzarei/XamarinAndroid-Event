@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+   android:id="@+id/rangeplacelinearlayout"
+	android:background="#e0e0e0">
+	<TextView
+		android:text="انتخاب محدوده"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/rangeplacetxtviewcaption"
+		android:background="#bdbdbd"
+		android:textColor="#212121"
+		android:textSize="20dp"
+		android:textStyle="bold"
+		android:gravity="center" />
+	<CheckBox
+		android:text="تمام شیراز"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="25dp"
+		android:layout_marginLeft="35dp"
+		android:layout_marginRight="35dp"
+		android:layout_marginBottom="5dp"
+		android:id="@+id/rangeplacechkOnlyshiraz"
+		android:textSize="20dp"
+		android:checked="true" />
+	<Button
+		android:text="انتخاب محدوده"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/selecteventroundleftbutton"
+		android:layout_marginTop="50dp"
+		android:layout_marginBottom="5dp"
+		android:layout_marginLeft="35dp"
+		android:layout_marginRight="35dp"
+		android:textColor="#212121"
+		android:id="@+id/rangeplacebtnrangeplace"
+		android:textSize="20dp"
+		android:textStyle="bold" />
+	<Button
+		android:text="تایید"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/roundbuttonenterfilter"
+		android:layout_marginTop="50dp"
+		android:layout_marginLeft="35dp"
+		android:layout_marginRight="35dp"
+		android:layout_marginBottom="5dp"
+		android:textColor="#fafafa"
+		android:id="@+id/rangeplacebtnexit"
+		android:textSize="20dp"
+		android:textStyle="bold" />
+</LinearLayout>
+	</ScrollView>

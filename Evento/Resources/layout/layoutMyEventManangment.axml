@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:background="@color/color_header"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_vertical">
+                <TextView
+                    android:text="ارسال شده"
+                    android:textSize="15dp"
+                    android:id="@+id/myeventmanagmnettxtviewcaption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#fafafa"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+                <TextView
+                    android:text="وضعیت آگهی"
+                    android:textSize="15dp"
+                    android:id="@+id/myeventmanagmnettxtviewstatuse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:textColor="#fafafa"
+                    android:textStyle="bold" />
+                <Button
+                    android:text="بازگشت"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/myeventmanagmnetButtonBack"
+                    android:textColor="#fafafa"
+                    android:background="@null"
+                    android:layout_weight="1"
+                    android:textSize="23dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="left"
+                    android:gravity="center_vertical|right"
+                    android:layout_marginRight="0dp" />
+                <ImageView
+                    android:src="@drawable/whitenext24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/myeventmanagmnetimgviewback"
+                    android:scaleType="center"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundfilter"
+                android:weightSum="3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+                <Button
+                    android:text="حذف"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/myeventmanagmnetbuttondelete"
+                    android:layout_weight="1"
+                    android:textColor="#fafafa"
+                    android:background="@drawable/roundedbottomenterevent"
+                    android:textSize="16dp" />
+                <Button
+                    android:text="ویرایش"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/myeventmanagmnetbuttonedit"
+                    android:layout_weight="1"
+                    android:textColor="#fafafa"
+                    android:background="@drawable/roundedbottomenterevent"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="5dp" />
+                <Button
+                    android:text="ارتقاء"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/myeventmanagmnetbuttondown"
+                    android:layout_weight="1"
+                    android:textColor="#fafafa"
+                    android:background="@drawable/roundedbottomenterevent"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="139.0dp"
+                android:id="@+id/myeventmanagmnetvpagerslider"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+            <android.support.design.widget.TabLayout
+                android:id="@+id/myeventmanagmnettablayoutdots"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp"
+                app:tabPaddingStart="7dp"
+                app:tabPaddingEnd="7dp"
+                app:tabBackground="@drawable/dot_selector"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:minWidth="25px"
+                android:minHeight="25px" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selecteventroundalllinearlayout"
+                android:layout_marginBottom="5dp"
+                android:weightSum="1">
+                <TextView
+                    android:text="مسابقه کشتی"
+                    android:id="@+id/myeventmanagmnettxtviewmajor"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/selecteventroundtoplinearlayout"
+                android:weightSum="2">
+                <TextView
+                    android:text="ورزشی مسابقه"
+                    android:id="@+id/myeventmanagmnettxtviewsport"
+                    android:textSize="17dp"
+                    android:textStyle="normal"
+                    android:textColor="#616161"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="right"
+                    android:gravity="right" />
+                <TextView
+                    android:text="دسته بندی"
+                    android:textSize="17dp"
+                    android:textStyle="normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/myeventmanagmnettxtviewcaptiongroup"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#616161"
+                    android:foregroundGravity="right"
+                    android:layout_gravity="right|center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eeeeee"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:weightSum="2">
+                <TextView
+                    android:text="شیراز زرهی"
+                    android:id="@+id/myeventmanagmnettxtviewplace"
+                    android:textSize="17dp"
+                    android:textStyle="normal"
+                    android:textColor="#212121"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:foregroundGravity="right"
+                    android:paddingStart="3dp"
+                    app:paddingStart="3dp" />
+                <TextView
+                    android:text="مکان"
+                    android:textSize="17dp"
+                    android:textStyle="normal"
+                    android:textColor="#212121"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/myeventmanagmnettxtviewcaptionplace"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:gravity="right"
+                    android:foregroundGravity="right" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eeeeee"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:weightSum="2">
+                <TextView
+                    android:text="22اردیبهشت تا 25شهریور"
+                    android:id="@+id/myeventmanagmnettxtviewdate"
+                    android:textSize="17dp"
+                    android:gravity="right"
+                    android:textStyle="normal"
+                    android:textColor="#212121"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:foregroundGravity="right"
+                    android:layout_gravity="end|right" />
+                <TextView
+                    android:text="زمان"
+                    android:layout_width="match_parent"
+                    android:textSize="17dp"
+                    android:textStyle="normal"
+                    android:textColor="#212121"
+                    android:background="#eeeeee"
+                    android:layout_height="match_parent"
+                    android:id="@+id/myeventmanagmnettxtviewcaptiontime"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:gravity="right"
+                    android:foregroundGravity="right"
+                    android:layout_gravity="right|center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selecteventroundbottmlinearlayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:weightSum="2">
+                <TextView
+                    android:text="60000تومان"
+                    android:id="@+id/myeventmanagmnettxtviewprice"
+                    android:textSize="18dp"
+                    android:textStyle="normal"
+                    android:textColor="#212121"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:foregroundGravity="right" />
+                <TextView
+                    android:text="هزینه"
+                    android:textSize="17dp"
+                    android:textStyle="normal"
+                    android:textColor="#212121"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/myeventmanagmnettxtviewcaptioncost"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:gravity="right"
+                    android:layout_gravity="center|right" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@drawable/selecteventroundalllinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:weightSum="2"
+                android:layout_marginTop="7dp">
+                <TextView
+                    android:text=" توضیحات ندارد  "
+                    android:id="@+id/myeventmanagmnettxtviewdescription"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:textColor="#212121"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="right" />
+                <TextView
+                    android:text="توضیحات"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:textColor="#212121"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/myeventmanagmnettxtviewcaptiondescription"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="right|center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@drawable/selecteventroundtoplinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:weightSum="2"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:text=" 0912325235"
+                    android:id="@+id/myeventmanagmnettxtviewtel"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:textColor="#212121"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="right" />
+                <TextView
+                    android:text="شماره تماس"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:textColor="#212121"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/myeventmanagmnettxtviewcaptioncontact"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="right|center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="#eeeeee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:weightSum="2">
+                <TextView
+                    android:text=" بلوار چمران کوچه 10"
+                    android:id="@+id/myeventmanagmnettxtviewaddress"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:textColor="#212121"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="right|center"
+                    android:foregroundGravity="right" />
+                <TextView
+                    android:text="آدرس رویداد"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:textColor="#212121"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/myeventmanagmnettxtviewcaptionaddress"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="right|center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@drawable/roundbottomlinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:weightSum="2">
+                <TextView
+                    android:text="www.google.com"
+                    android:id="@+id/myeventmanagmnettxtviewurl"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:textDirection="rtl"
+                    android:textColor="#212121"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:foregroundGravity="right" />
+                <TextView
+                    android:text="آدرس اینترنتی"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:textColor="#212121"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/myeventmanagmnettxtviewcaptionurl"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="right|center" />
+            </LinearLayout>
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/myeventmanagmnetchart"
+                android:layout_width="fill_parent"
+                android:layout_height="300dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

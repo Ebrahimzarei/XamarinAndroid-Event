@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:background="#e0e0e0"
+	 android:id="@+id/rulelinearlayout"
+    android:minHeight="25px">
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="قوانین"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ruletxtviewcaption"
+                android:textSize="18dp"
+                android:background="#e0e0e0"
+                android:textColor="#212121"
+                android:gravity="center" />
+            <TextView
+                android:text="قانون اول"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ruletxtviewone"
+                android:textSize="18dp"
+                android:gravity="right" />
+            <TextView
+                android:text="قانون دوم"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ruletxtviewtwo"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18dp"
+                android:gravity="right" />
+            <TextView
+                android:text="قانون سوم"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ruletxtviewthree"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18dp"
+                android:gravity="right" />
+            <TextView
+                android:text="قانون چهارم"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ruletxtviewfor"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18dp"
+                android:gravity="right" />
+            <TextView
+                android:text="قانون پنجم"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ruletxtviewfive"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18dp"
+                android:gravity="right" />
+            <TextView
+                android:text="قانون ششم"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ruletxtviewsix"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18dp"
+                android:gravity="right" />
+            <TextView
+                android:text="قانون هفتم"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ruletxtviewseven"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18dp"
+                android:gravity="right" />
+            <Button
+                android:text="تایید"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/selecteventroundleftbutton"
+                android:textColor="#212121"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:id="@+id/rulebtnenter" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

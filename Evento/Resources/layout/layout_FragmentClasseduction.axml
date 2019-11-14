@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:background="#eeeeee"
+	android:id="@+id/fragmentclasseductionlinearlayout"
+    android:minHeight="25px">
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#311b92">
+				<TextView
+					android:text="انتخاب رویداد"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/fragmentclasseductiontxtheader"
+					android:textSize="20dp"
+					android:textStyle="bold"
+					android:textColor="#212121"
+					android:gravity="center"
+					android:background="#eeeeee" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:text="گردشگری "
+                android:id="@+id/fragmentclasseductionchktourism"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:checked="false"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242" />
+            <CheckBox
+                android:text="ورزشی"
+                android:id="@+id/captioneventradsport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242" />
+            <CheckBox
+                android:text="خوراکی"
+                android:id="@+id/fragmentclasseductionchkfood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242" />
+            <CheckBox
+                android:text="مذهبی"
+                android:id="@+id/fragmentclasseductionchkreligion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242" />
+            <CheckBox
+                android:text="پیشه و مهارت"
+                android:id="@+id/fragmentclasseductionchkskill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242" />
+            <CheckBox
+                android:text="دروس مدرسه و دانشگاه"
+                android:id="@+id/fragmentclasseductionchklessonschool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242"
+                android:layout_marginBottom="3dp" />
+			     <CheckBox
+                android:text="زبان های خارجی"
+                android:id="@+id/fragmentclasseductionchklanguage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242"
+                android:layout_marginBottom="3dp" />
+			  <CheckBox
+                android:text="مشاوره تحصیلی"
+                android:id="@+id/fragmentclasseductionchkmoshavere"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242"
+                android:layout_marginBottom="3dp" />
+			  <CheckBox
+                android:text="هنری"
+                android:id="@+id/fragmentclasseductionchkcultrual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242"
+                android:layout_marginBottom="3dp" />
+			  <CheckBox
+                android:text="پزشکی"
+                android:id="@+id/fragmentclasseductionchkmedicall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242"
+                android:layout_marginBottom="3dp" />
+			  <CheckBox
+                android:text="زیبایی"
+                android:id="@+id/fragmentclasseductionchkperfect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242"
+                android:layout_marginBottom="3dp" />
+			  <CheckBox
+                android:text= "موسیقی"
+                android:id="@+id/fragmentclasseductionchkmusic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242"
+                android:layout_marginBottom="3dp" />
+			  <CheckBox
+                android:text="عکاسی"
+                android:id="@+id/fragmentclasseductionchktakephoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242"
+                android:layout_marginBottom="3dp" />
+			  <CheckBox
+                android:text="ورک شاپ"
+                android:id="@+id/fragmentclasseductionchkworkshop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242"
+                android:layout_marginBottom="3dp" />
+			            <CheckBox
+                android:text="سایر"
+                android:id="@+id/fragmentclasseductionchkother"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242" />
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:text="بی خیال"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/selecteventroundleftbutton"
+        android:textColor="#212121"
+        android:id="@+id/fragmentclasseeductionbtncancell"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</LinearLayout>

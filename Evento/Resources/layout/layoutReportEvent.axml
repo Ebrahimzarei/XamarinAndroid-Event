@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+		android:id="@+id/reporteventlinearlayout"
+    android:layout_height="match_parent"
+    android:background="#e0e0e0">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:gravity="center"
+        android:minHeight="25px"
+        android:background="#e0e0e0">
+        <TextView
+            android:text=" گزارش رویداد"
+            android:id="@+id/reporteventtxtviewcaption"
+            android:gravity="center"
+            android:textColor="#212121"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        <ScrollView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="#e0e0e0"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:textSize="20dp"
+                    android:textStyle="normal"
+                    android:gravity="start"
+                    android:id="@+id/reporteventchk1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="محتوای رویداد نا مناسب است"
+                    android:layout_marginRight="8dp" />
+                <CheckBox
+                    android:textSize="20dp"
+                    android:textStyle="normal"
+                    android:gravity="start"
+                    android:id="@+id/reporteventchk2"
+                    android:text="اطلاعات رویداد گمرا ه کننده ویا دروغ است"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp" />
+                <CheckBox
+                    android:textSize="20dp"
+                    android:textStyle="normal"
+                    android:gravity="start"
+                    android:id="@+id/reporteventchk3"
+                    android:text="رویداد اسپم است و چندین بار پست شده است"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp" />
+                <CheckBox
+                    android:textSize="20dp"
+                    android:textStyle="normal"
+                    android:gravity="start"
+                    android:id="@+id/reporteventchk4"
+                    android:text="رویداد در دسته بندی نامربوط قرار گرفته است"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp" />
+                <CheckBox
+                    android:textSize="20dp"
+                    android:textStyle="normal"
+                    android:gravity="start"
+                    android:id="@+id/reporteventchk5"
+                    android:text="قیمت آگهی نامناسب است"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp" />
+                <CheckBox
+                    android:textSize="20dp"
+                    android:textStyle="normal"
+                    android:gravity="start"
+                    android:id="@+id/reporteventchk6"
+                    android:text="خدمات رویداد دیگر موجود نیست"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp" />
+                <CheckBox
+                    android:text="دلایل دیگر..."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reporteventchk8"
+                    android:textSize="20dp"
+                    android:textStyle="normal"
+                    android:layout_marginRight="8dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:weightSum="2">
+        <Button
+            android:text="ارسال"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/reporteventbtnsend"
+            android:background="@drawable/selecteventroundleftbutton"
+            android:textColor="#212121"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp" />
+        <Button
+            android:text="بی خیال"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/reporteventbtncancell"
+            android:background="@drawable/selecteventroundleftbutton"
+            android:textColor="#212121"
+            android:textSize="20dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
+	</ScrollView>

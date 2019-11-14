@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_height="wrap_content">
+    <Button
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="اطلاعات من"
+        android:background="@drawable/bg_foterbutton"
+        android:textColor="@android:color/white"
+        android:id="@+id/MyeventbtnContact"
+        android:drawableTop="@drawable/manuser24white"
+        android:padding="2dip" />
+    <Button
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/flash24"
+        android:layout_height="wrap_content"
+        android:text="پیشنهاد ویژه"
+        android:background="@drawable/bg_foterbutton"
+        android:textColor="@android:color/white"
+        android:id="@+id/Myeventbtngift"
+        android:padding="2dip" />
+    <Button
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/day24rotaed"
+        android:layout_height="wrap_content"
+        android:text="رویداد های امروز"
+        android:background="@drawable/bg_foterbutton"
+        android:textColor="@android:color/white"
+        android:id="@+id/MyeventbtnEventDay"
+        android:padding="2dip" />
+    <Button
+        android:layout_width="0dip"
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:drawableTop="@drawable/menu24white"
+        android:layout_height="wrap_content"
+        android:text="دسته بندی"
+        android:textColor="@android:color/white"
+        android:id="@+id/MyeventbtngroupingGrouping"
+        android:padding="2dip"
+        android:layout_weight="1"
+        android:background="@drawable/bg_foterbutton" />
+</LinearLayout>

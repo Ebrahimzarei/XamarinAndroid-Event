@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/colorwhite">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/top_headercultrual"
+		android:background="@color/color_header"
+		android:descendantFocusability="beforeDescendants"
+		android:focusableInTouchMode="true"
+		android:weightSum="4"
+		android:layout_alignParentTop="true"
+		android:fadeScrollbars="true">
+		<Button
+			android:text="ثبت رویداد"
+			android:layout_width="90dp"
+			android:layout_height="wrap_content"
+			android:background="@drawable/roundedbuttonallenterevent"
+			android:textColor="#311b92"
+			android:textSize="15dp"
+			android:gravity="center"
+			android:layout_column="1"
+			android:layout_weight="1"
+			android:id="@+id/culturalbtnenterevent"
+			android:foregroundGravity="center"
+			android:layout_marginBottom="6dp"
+			android:layout_marginLeft="6dp"
+			android:layout_marginRight="6dp"
+			android:layout_marginTop="6dp" />
+		<TextView
+			android:text="فرهنگی هنری"
+			android:id="@+id/culturaltxtviewgroup"
+			android:layout_width="147.5dp"
+			android:layout_height="match_parent"
+			android:layout_column="1"
+			android:layout_weight="1"
+			android:textColor="@android:color/white"
+			android:textSize="16dp"
+			android:textStyle="bold"
+			android:gravity="center" />
+		<ImageButton
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:background="@drawable/logo2"
+			android:layout_column="1"
+			android:layout_marginTop="8dp"
+			android:id="@+id/culturalimgbtnlogo"
+			android:layout_weight="1"
+			android:layout_marginRight="8dp" />
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_alignParentBottom="true"
+		android:id="@+id/bottom_menuucultrual"
+		android:layout_height="wrap_content">
+		<Button
+			android:textStyle="bold"
+			android:textSize="13dp"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:text="اطلاعات من"
+			android:background="@drawable/roundleftfooter"
+			android:textColor="@android:color/white"
+			android:id="@+id/cultrualbtnContact"
+			android:drawableTop="@drawable/manuser24white"
+			android:padding="3dip" />
+		<Button
+			android:textStyle="bold"
+			android:textSize="13dp"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:drawableTop="@drawable/flash24"
+			android:layout_height="wrap_content"
+			android:text="پیشنهاد ویژه"
+			android:background="@drawable/bg_foterbutton"
+			android:textColor="@android:color/white"
+			android:id="@+id/cultrualbtngift"
+			android:padding="3dip" />
+		<Button
+			android:textStyle="bold"
+			android:textSize="13dp"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:drawableTop="@drawable/day24rotaed"
+			android:layout_height="wrap_content"
+			android:text="رویداد های امروز"
+			android:background="@drawable/bg_foterbutton"
+			android:textColor="@android:color/white"
+			android:id="@+id/cultrualbtnEventDay"
+			android:padding="3dip" />
+		<Button
+			android:layout_width="0dip"
+			android:textStyle="bold"
+			android:textSize="13dp"
+			android:drawableTop="@drawable/menu24white"
+			android:layout_height="wrap_content"
+			android:text="دسته بندی"
+			android:textColor="@android:color/white"
+			android:id="@+id/cultrualbtngroupingGrouping"
+			android:padding="3dip"
+			android:layout_weight="1"
+			android:background="@drawable/roundrightfooter" />
+	</LinearLayout>
+	<ScrollView
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="65dp"
+		android:layout_marginBottom="65dp"
+		android:layout_weight="1">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/top_headercultrual"
+			android:layout_above="@id/bottom_menuucultrual"
+			android:id="@+id/sub_content_viewcultrual"
+			android:orientation="vertical">
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:minWidth="25px"
+				android:minHeight="25px">
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_marginTop="5dp"
+					android:layout_height="wrap_content">
+					<ImageView
+						android:src="@drawable/cultrualexhibition64"
+						android:background="@drawable/roundedimagecategory"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_marginRight="10dp" />
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+						<Button
+							android:text="نمایشگاه"
+							android:gravity="right|center"
+							android:textDirection="ltr"
+							android:paddingRight="80px"
+					 android:background="#eeeeee"
+							android:id="@+id/culturalbtnfarhangi"
+							android:layout_width="240.0dp"
+							android:layout_height="wrap_content"
+							android:maxHeight="51dp"
+							android:minHeight="51dp" />
+						<LinearLayout
+							android:orientation="horizontal"
+							
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:minHeight="5px"
+						    android:background="@color/color_header" />
+					
+					</LinearLayout>
+				</RelativeLayout>
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_marginTop="5dp"
+					android:layout_height="wrap_content">
+					<ImageView
+						android:src="@drawable/cultrualcermoney64"
+						android:background="@drawable/roundedimagecategory"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_marginRight="10dp" />
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+						<Button
+							android:background="@drawable/roundbuttoncategory"
+							android:text="سینما"
+							android:id="@+id/cultrulbtncinema"
+							android:gravity="right|center"
+							android:textDirection="ltr"
+							android:layout_width="239.5dp"
+							android:layout_height="wrap_content"
+							android:maxWidth="310dp"
+							android:minWidth="310dp"
+							android:paddingRight="80px"
+							android:maxHeight="51dp"
+							android:minHeight="51dp" />
+						<LinearLayout
+							android:orientation="horizontal"
+							android:minWidth="310dp"
+							
+							android:layout_width="239.5dp"
+							android:layout_height="wrap_content"
+							android:minHeight="5px"
+						    android:background="@color/color_header" />
+					</LinearLayout>
+				</RelativeLayout>
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_marginTop="5dp"
+					android:layout_height="wrap_content">
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+						<Button
+							android:text="کنسرت"
+							android:id="@+id/cultrualbtnconcert"
+							android:background="@drawable/roundbuttoncategory"
+							android:gravity="right|center"
+							android:textDirection="ltr"
+							android:paddingRight="80px"
+							android:layout_width="239.5dp"
+							 
+							android:layout_height="wrap_content"
+							android:minWidth="310dp"
+							android:maxHeight="51dp"
+							android:minHeight="51dp" />
+						<LinearLayout
+							android:orientation="horizontal"
+							android:minWidth="310dp"
+							
+							android:layout_width="239.5dp"
+							android:layout_height="wrap_content"
+							android:minHeight="5px"
+						    android:background="@color/color_header" />
+					</LinearLayout>
+					<ImageView
+						android:src="@drawable/cultrualconcert64"
+						android:background="@drawable/roundedimagecategory"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:id="@+id/imageView1"
+						android:layout_marginRight="10dp" />
+				</RelativeLayout>
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_marginTop="5dp"
+					android:layout_height="wrap_content">
+					<ImageView
+						android:src="@drawable/cultrualgallery64"
+						android:background="@drawable/roundedimagecategory"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_marginRight="10dp" />
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+						<Button
+							android:text="گالری"
+							android:id="@+id/cultrualbtngallery"
+							android:background="@drawable/roundbuttoncategory"
+							android:gravity="right|center"
+							android:textDirection="ltr"
+							android:layout_width="240.5dp"
+							android:layout_height="wrap_content"
+							android:minWidth="310dp"
+							android:paddingRight="80px"
+							android:maxHeight="51dp"
+							android:minHeight="51dp" />
+						<LinearLayout
+							android:orientation="horizontal"
+							android:minWidth="310dp"
+							android:minHeight="5px"
+							android:paddingRight="80px"
+						    android:background="@color/color_header"
+							android:layout_width="240.5dp"
+							android:layout_height="wrap_content"
+							 />
+					</LinearLayout>
+				</RelativeLayout>
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_marginTop="5dp"
+					android:layout_height="wrap_content">
+					<ImageView
+						android:src="@drawable/cultrualcermoney64"
+						android:background="@drawable/roundedimagecategory"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_marginRight="10dp" />
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+						<Button
+							android:text="همایش و مراسم"
+							android:id="@+id/cultrualbtnmarasem"
+							android:background="@drawable/roundbuttoncategory"
+							android:gravity="right|center"
+							android:textDirection="ltr"
+							android:layout_width="241.0dp"
+							android:layout_height="wrap_content"
+							android:minWidth="310dp"
+							android:paddingRight="80px"
+							android:maxHeight="51dp"
+							android:minHeight="51dp" />
+						<LinearLayout
+							android:orientation="horizontal"
+							android:minWidth="310dp"
+							android:minHeight="5px"
+						    android:background="@color/color_header"
+							android:layout_width="240.5dp"
+							android:layout_height="wrap_content"
+							/>
+					</LinearLayout>
+				</RelativeLayout>
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_marginTop="5dp"
+					android:layout_height="wrap_content">
+					<ImageView
+						android:src="@drawable/cultrualtheator64"
+						android:background="@drawable/roundedimagecategory"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_marginRight="10dp" />
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+						<Button
+							android:text="تیاتر"
+							android:id="@+id/cultrualbtnjazebe"
+							android:background="@drawable/roundbuttoncategory"
+							android:gravity="right|center"
+							android:textDirection="ltr"
+							android:paddingRight="80px"
+							android:layout_width="240.0dp"
+							android:layout_height="wrap_content"
+							android:minWidth="310dp"
+							android:minHeight="51dp" />
+						<LinearLayout
+							android:orientation="horizontal"
+							android:minWidth="310dp"
+							android:minHeight="5px"
+						    android:background="@color/color_header"
+							android:layout_width="239.0dp"
+							android:layout_height="wrap_content"
+							 />
+					</LinearLayout>
+				</RelativeLayout>
+		
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

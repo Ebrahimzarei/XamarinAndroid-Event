@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+		android:id="@+id/PanelCostlinearlayout"
+    android:background="#eeeeee">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee">
+        <TextView
+            android:text="هزینه"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/PanelCostTextviewCaption"
+            android:background="#eeeeee"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center" />
+    </LinearLayout>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:id="@+id/PanelCostChkboxFree"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:text="رایگان"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#212121" />
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:gravity="center"
+        android:text="قیمت درج شود"
+        android:id="@+id/PanelCostChkboxPriceOkey"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:textColor="#212121" />
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="قیمت درج نشود"
+        android:id="@+id/PanelCostChkBoxNotOkey"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="19dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textStyle="bold"
+        android:textColor="#212121" />
+    <TextView
+        android:text="هزینه"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/PanelCostTextviewCaptionPrice"
+        android:textColor="#311b92"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center" />
+    <Button
+        android:text="تایید"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selecteventroundleftbutton"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/PanelCostButtonEnter"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#212121" />
+</LinearLayout>
+	</ScrollView>

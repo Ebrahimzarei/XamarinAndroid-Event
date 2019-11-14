@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+	android:id="@+id/AboutusLinearLayout"
+   android:background="#eeeeee">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:background="#bdbdbd">
+        <TextView
+            android:text="درباره ما"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/AboutUstextviewcaption"
+            android:textColor="#212121"
+			
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:id="@+id/AboutUsTextviewtwo"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:text="درباره ما"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#212121"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="right"
+        android:text=" درباره ما"
+        android:id="@+id/AboutUsTextviewThree"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:textColor="#212121" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="در باره ما"
+        android:id="@+id/AboutUsTextViewFor"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="19dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textStyle="bold"
+        android:textColor="#212121" />
+    <Button
+        android:text="تایید"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selecteventroundleftbutton"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:id="@+id/AboutUsBtnEnter"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#212121" />
+</LinearLayout>
+	</ScrollView>

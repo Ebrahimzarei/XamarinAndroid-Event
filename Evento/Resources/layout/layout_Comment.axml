@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorwhite">
+<!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/top_header"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:background="@color/colorwhite">
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/color_header"
+			android:descendantFocusability="beforeDescendants"
+			android:focusableInTouchMode="true"
+			android:weightSum="4"
+			android:layout_alignParentTop="true"
+			android:fadeScrollbars="true">
+			<Button
+				android:text="ثبت رویداد"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/roundedbuttonallenterevent"
+				android:textColor="#311b92"
+				android:textSize="15dp"
+				android:gravity="center"
+				android:layout_column="1"
+				android:layout_weight="1"
+				android:id="@+id/Commmentbtnenterevent"
+				android:foregroundGravity="center"
+				android:layout_marginBottom="3dp"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:layout_marginTop="3dp" />
+			<TextView
+				android:text="نظرات"
+				android:layout_width="147.5dp"
+				android:layout_height="match_parent"
+				android:layout_column="1"
+				android:id="@+id/Commenttxtviewcaption"
+				android:layout_weight="1"
+				android:textColor="@android:color/white"
+				android:textSize="16dp"
+				android:textStyle="bold"
+				android:gravity="center" />
+			<ImageButton
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:background="@drawable/logo2"
+				android:layout_column="1"
+				android:layout_marginTop="8dp"
+				android:id="@+id/Commentimgbtnlogo"
+				android:layout_weight="1"
+				android:layout_marginRight="8dp" />
+		</LinearLayout>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:background="@color/colorwhite"
+			android:weightSum="4"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			
+			android:layout_marginTop="3dp"
+			android:layout_marginRight="4dp"
+			android:layout_marginLeft="4dp"
+			android:layout_marginBottom="3dp">
+	 
+		 
+		</LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/mainbottom_panel"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+   
+       <Button
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="اطلاعات من"
+            android:background="@drawable/bg_foterbutton"
+            android:textColor="@android:color/white"
+            android:id="@+id/CommentbtnContact"
+            android:drawableTop="@drawable/manuser24white"
+            android:padding="2dip" />
+        <Button
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/flash24"
+            android:layout_height="wrap_content"
+            android:text="پیشنهاد ویژه"
+            android:background="@drawable/bg_foterbutton"
+            android:textColor="@android:color/white"
+            android:id="@+id/Commentbtngift"
+            android:padding="2dip" />
+        <Button
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/day24rotaed"
+            android:layout_height="wrap_content"
+            android:text="رویداد های امروز"
+            android:background="@drawable/bg_foterbutton"
+            android:textColor="@android:color/white"
+            android:id="@+id/CommentbtnEventDay"
+            android:padding="2dip" />
+        <Button
+            android:layout_width="0dip"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:drawableTop="@drawable/menu24white"
+            android:layout_height="wrap_content"
+            android:text="دسته بندی"
+            android:textColor="@android:color/white"
+            android:id="@+id/CommentbtngroupingGrouping"
+            android:padding="2dip"
+            android:layout_weight="1"
+            android:background="@drawable/bg_foterbutton" />     
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/top_header"
+        android:layout_above="@id/mainbottom_panel"
+        android:id="@+id/sub_content_view"
+    android:background="@color/colorwhite">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:id="@+id/CommentListView" />
+    </LinearLayout>
+<!--</ScrollView>-->
+</RelativeLayout>

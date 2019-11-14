@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:background="#eeeeee"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/ll2"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:fadeScrollbars="true"
+       android:background="#bdbdbd">
+        <TextView
+            android:text="انتخاب محل"
+            android:id="@+id/placetxtviewplace"
+            
+            android:layout_width="match_parent"
+			android:textColor="#212121"
+            android:layout_height="match_parent"
+            android:gravity="center" />
+    </LinearLayout>
+    <Button
+        android:text="ذخیره"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selecteventroundleftbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="20dp"
+        android:textColor="#212121"
+        android:id="@+id/placebtnsave" />
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_below="@id/ll2"
+        android:layout_above="@id/placebtnsave"
+        android:layout_height="wrap_content">
+		<LinearLayout
+			android:orientation="vertical"
+			android:background="#e0e0e0"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<CheckBox
+				android:text="ارتش"
+				android:id="@+id/placechk1"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="start"
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp" />
+			<CheckBox
+				android:text="بلوار رحمت"
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:id="@+id/placechk2"
+				android:gravity="start"
+				android:layout_marginRight="7dp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:gravity="start"
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:id="@+id/placechk3"
+				android:text="بنی هاشمی"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:gravity="start"
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:id="@+id/placechk4"
+				android:text="خلدبرین"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:gravity="start"
+				android:textSize="20dp"
+				android:layout_marginRight="7dp"
+				android:textStyle="normal"
+				android:id="@+id/placechk5"
+				android:text="دلگشا"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:gravity="start"
+				android:id="@+id/placechk6"
+				android:textSize="20dp"
+				android:layout_marginRight="7dp"
+				android:textStyle="normal"
+				android:text="زرگری"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:gravity="start"
+				android:id="@+id/placechk7"
+				android:textSize="20dp"
+				android:layout_marginRight="7dp"
+				android:textStyle="normal"
+				android:text="شهرک گلستان"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:gravity="start"
+				android:id="@+id/placechk8"
+				android:layout_marginRight="7dp"
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:text="فرهنگ شهر"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk9"
+				android:text="فلکه گاز"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk10"
+				android:text="ادبیات"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk11"
+				android:text="ارم"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:gravity="start"
+				android:textSize="20dp"
+				android:layout_marginRight="7dp"
+				android:textStyle="normal"
+				android:id="@+id/placechk12"
+				android:text="اطلسی"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:gravity="start"
+				android:layout_marginRight="7dp"
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:id="@+id/placechk13"
+				android:text="امیر کبیر"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:gravity="start"
+				android:textSize="20dp"
+				android:layout_marginRight="7dp"
+				android:textStyle="normal"
+				android:id="@+id/placechk14"
+				android:text="باهنر جنوبی"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk15"
+				android:text="باهنر شمالی"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk16"
+				android:text="بعثت"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:gravity="start"
+				android:id="@+id/placechk17"
+				android:layout_marginRight="7dp"
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:text="بلوار عدالت"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk18"
+				android:text="بلوار فضیلت"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:text="بلوار مدرس"
+				android:id="@+id/placechk19"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:layout_marginRight="7dp"
+				android:textStyle="normal"
+				android:text="پارامونت"
+				android:id="@+id/placechk20"
+				android:gravity="start"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk21"
+				android:text="پاسارگاد"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk22"
+				android:text="پاسداران"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk23"
+				android:text="پایگاه هوایی"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk24"
+				android:text="پل غدیر"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk25"
+				android:text="تاچارا"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:gravity="start"
+				android:layout_marginRight="7dp"
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:id="@+id/placechk26"
+				android:text="جمهوری"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk27"
+				android:text="چمران"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk28"
+				android:text="زیبا شهر"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk29"
+				android:text="زند"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk30"
+				android:text="ستارخان"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk31"
+				android:text="سراج"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:text="سرداران"
+				android:id="@+id/placechk32"
+				android:gravity="start"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:layout_marginRight="7dp"
+				android:textStyle="normal"
+				android:text="سفیر جنوبی"
+				android:id="@+id/placechk33"
+				android:gravity="start"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk34"
+				android:text="سفیر شمالی"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:text="سینما سعدی"
+				android:id="@+id/placechk35"
+				android:gravity="start"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:gravity="start"
+				android:id="@+id/placechk36"
+				android:layout_marginRight="7dp"
+				android:text="شهرک بهشتی"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:gravity="start"
+				android:layout_marginRight="7dp"
+				android:id="@+id/placechk37"
+				android:text="شهرک پرواز"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk38"
+				android:text="شهرک رکن آباد"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk39"
+				android:text="شهرک مطهری"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk40"
+				android:text="صدرا فاز دو"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:gravity="start"
+				android:layout_marginRight="7dp"
+				android:id="@+id/placechk41"
+				android:text="صدارا قاز یک"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk42"
+				android:text="صنایع میرزای شیرازی"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk43"
+				android:text="عفیف آباد"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk44"
+				android:text="فخر آباد"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk45"
+				android:text="فرصت شیرازی"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk46"
+				android:text="فرگاز"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:layout_marginRight="7dp"
+				android:textStyle="normal"
+				android:gravity="start"
+				android:id="@+id/placechk47"
+				android:text="فسا"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk48"
+				android:text="قدوسی شرقی"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk49"
+				android:text="قدوسی غربی"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk50"
+				android:text="قصر دشت"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk51"
+				android:text="کازرون"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk52"
+				android:text="کلبه"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk53"
+				android:text="کوی زهرا"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk54"
+				android:text="گلدشت حافظ"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk55"
+				android:text="میانرود"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk56"
+				android:text="میدان معلم"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk57"
+				android:text="مرودشت"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk58"
+				android:text="مطهری"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk59"
+				android:text="معالی آباد"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk60"
+				android:text="ملاصدرا"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk61"
+				android:text="نصر"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:textStyle="normal"
+				android:layout_marginRight="7dp"
+				android:gravity="start"
+				android:id="@+id/placechk62"
+				android:text="همت جنوبی"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:layout_marginRight="7dp"
+				android:textStyle="normal"
+				android:gravity="start"
+				android:id="@+id/placechk63"
+				android:text="همت شمالی"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+			<CheckBox
+				android:textSize="20dp"
+				android:layout_marginRight="7dp"
+				android:layout_height="wrap_content"
+				android:textStyle="normal"
+				android:gravity="start"
+				android:id="@+id/placechk64"
+				android:text="والفجر"
+				android:layout_width="match_parent" />
+		</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

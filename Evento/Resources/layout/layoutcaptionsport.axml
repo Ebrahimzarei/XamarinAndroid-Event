@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+	android:id="@+id/captionsportlinearlayout"
+    android:background="#eeeeee"
+    android:minHeight="25px">
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout1"
+                android:background="#bdbdbd">
+                <TextView
+                    android:text="موضوع رویداد"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/captiontxttxtviewheader"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:gravity="center" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+   
+            <CheckBox
+                android:text="باشگاه"
+                android:id="@+id/captionsportchkboxsiminarsport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242" />
+            <CheckBox
+                android:text="گیم کلاب"
+                android:id="@+id/captionsportchkboxcompetitions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242" />
+            <CheckBox
+                android:text="ورزش های توپی"
+                android:id="@+id/captionsportchkboxcongress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242" />
+            <CheckBox
+                android:text="ورزش های آبی"
+                android:id="@+id/captionsportchkboxlearning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242" />
+            <CheckBox
+                android:text="ورزش های رزمی"
+                android:id="@+id/captionsportchkboxplacesport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:text="بی خیال"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/selecteventroundleftbutton"
+        android:textColor="#212121"
+        android:layout_height="wrap_content"
+        android:id="@+id/captionsportbuttoncancell"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</LinearLayout>

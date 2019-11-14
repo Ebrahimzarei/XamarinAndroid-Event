@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e0e0e0">
+<!--<LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_light"
+         
+            android:padding="10dp">-->
+<!--</LinearLayout>-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:background="#eeeeee">
+        <ImageView
+            android:layout_width="133.5dp"
+            android:layout_height="102.5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/eventtest"
+            android:id="@+id/CustomSuprisedImage"
+            android:background="@null" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="102.5dp"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:background="@drawable/roundlinearlayout"
+            android:layout_marginRight="5dp">
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0,1,2">
+                <TableRow
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                   >
+                    <TextView
+                        android:text="Text"
+                        android:id="@+id/CustomSuprisedtxtViewcaption"
+                        android:textSize="17dp"
+                        android:gravity="right"
+                        android:textStyle="bold"
+                        android:textColor="#212121"
+                        android:layout_column="1"
+                        android:layout_marginRight="6dp" />
+                </TableRow>
+                <TableRow
+                    android:minWidth="25px"
+                    android:minHeight="25px">
+                    <TextView
+                        android:text="Text"
+                        android:id="@+id/CustomSuprisedtxtviewcaptiongrouping"
+                        android:textSize="11dp"
+                        android:gravity="right"
+                        android:textColor="#757575"
+                        android:layout_column="1"
+                        android:layout_marginRight="6dp" />
+                </TableRow>
+                <TableRow
+                    android:minWidth="25px"
+                    android:minHeight="25px">
+                    <TextView
+                        android:text="Text"
+                        android:id="@+id/CustomSuprisedTextextViewTime"
+                        android:textSize="11dp"
+                        android:gravity="right"
+                        android:textColor="#616161"
+                        android:layout_column="1"
+                        android:layout_marginRight="6dp" />
+                </TableRow>
+                <TableRow
+                    android:minWidth="25px"
+                    android:minHeight="25px">
+                    <TextView
+                        android:text="Text"
+                        android:id="@+id/CustomSuprisedTextextViewCost"
+                        android:textSize="11dp"
+                        android:gravity="right"
+                        android:textColor="#424242"
+                        android:layout_column="1"
+                        android:layout_marginRight="6dp"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow
+                    android:minWidth="25px"
+                    android:minHeight="25px">
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="#eeeeee" />
+</LinearLayout>

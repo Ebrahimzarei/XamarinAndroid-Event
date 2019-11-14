@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:background="#eeeeee"
+	android:id="@+id/captioneventlinearlayout"
+    android:minHeight="25px">
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#311b92">
+				<TextView
+					android:text="موضوع رویداد"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/captioneventtxtviewheader"
+					android:textSize="20dp"
+					android:textStyle="bold"
+					android:textColor="#212121"
+					android:gravity="center"
+					android:background="#bdbdbd" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:text="فرهنگی هنری"
+                android:id="@+id/captioneventradfarhangi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:checked="false"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242" />
+            <CheckBox
+                android:text="ورزش وسرگرمی"
+                android:id="@+id/captioneventradsport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242" />
+            <CheckBox
+                android:text=" علمی و تخصصی"
+                android:id="@+id/captioneventradelmi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242" />
+            <CheckBox
+                android:text=" داوطلبانه و مردمی"
+                android:id="@+id/captioneventradpeople"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242" />
+            <CheckBox
+                android:text=" تفریح و گردشگری"
+                android:id="@+id/captioneventradtourism"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242" />
+            <CheckBox
+                android:text="مذهبی و دینی"
+                android:id="@+id/captioneventradmazhabi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242"
+                android:layout_marginBottom="2dp" />
+			  <CheckBox
+                android:text="اغذیه فروشی"
+                android:id="@+id/captioneventradFoods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242"
+                android:layout_marginBottom="2dp" />
+			  <CheckBox
+                android:text="سلامتی و زیبایی"
+                android:id="@+id/captioneventradhealth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242"
+                android:layout_marginBottom="2dp" />
+				  <CheckBox
+                android:text=" کلاس های آموزشی"
+                android:id="@+id/captioneventradclasseduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242"
+                android:layout_marginBottom="3dp" />
+			  <CheckBox
+                android:text="فروشگاه ها"
+                android:id="@+id/captioneventradstore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:buttonTint="#ff000000"
+                android:layout_marginRight="5dp"
+                android:textColor="#424242"
+                android:layout_marginBottom="2dp" />
+				  
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:text="بی خیال"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/selecteventroundleftbutton"
+        android:textColor="#212121"
+        android:id="@+id/captioneventbtnenter"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</LinearLayout>

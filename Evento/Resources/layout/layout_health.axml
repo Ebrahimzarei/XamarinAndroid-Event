@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorwhite">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/top_headerhealth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_header"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:weightSum="4"
+        android:layout_alignParentTop="true"
+        android:fadeScrollbars="true">
+        <Button
+            android:text="ثبت رویداد"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedbuttonallenterevent"
+            android:textColor="#311b92"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:id="@+id/healthbtnenterevent"
+            android:foregroundGravity="center"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="6dp" />
+        <TextView
+            android:text="سلامتی و زیبایی"
+            android:layout_width="147.5dp"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:id="@+id/healthtxtviewgroup"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:gravity="center" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/logo2"
+            android:layout_column="1"
+            android:layout_marginTop="8dp"
+            android:id="@+id/healthimgbtnlogo"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/bottom_menuhealth"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <Button
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="اطلاعات من"
+            android:background="@drawable/roundleftfooter"
+            android:textColor="@android:color/white"
+            android:id="@+id/healthbtnContact"
+            android:drawableTop="@drawable/manuser24white"
+            android:padding="3dip" />
+        <Button
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/flash24"
+            android:layout_height="wrap_content"
+            android:text="پیشنهاد ویژه"
+            android:background="@drawable/bg_foterbutton"
+            android:textColor="@android:color/white"
+            android:id="@+id/healthbtngift"
+            android:padding="3dip" />
+        <Button
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/day24rotaed"
+            android:layout_height="wrap_content"
+            android:text="رویداد های امروز"
+            android:background="@drawable/bg_foterbutton"
+            android:textColor="@android:color/white"
+            android:id="@+id/healthbtnEventDay"
+            android:padding="3dip" />
+        <Button
+            android:layout_width="0dip"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:drawableTop="@drawable/menu24white"
+            android:layout_height="wrap_content"
+            android:text="دسته بندی"
+            android:textColor="@android:color/white"
+            android:id="@+id/healthbtngroupingGrouping"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/roundrightfooter" />
+    </LinearLayout>
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_headerhealth"
+            android:layout_above="@id/bottom_menuhealth"
+            android:id="@+id/sub_content_viewhealth"
+            android:orientation="vertical">
+		 	<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:minWidth="25px"
+				android:minHeight="25px">
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_marginTop="5dp"
+					android:layout_height="wrap_content">
+					<ImageView
+						android:src="@drawable/healthbarber64"
+						android:background="@drawable/roundedimagecategory"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_marginRight="10dp" />
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+						<Button
+							android:text="آرایشگاه"
+							android:paddingRight="80px"
+							android:id="@+id/healthbarbare"
+							android:gravity="right|center"
+							android:textDirection="ltr"
+							android:background="@drawable/roundbuttoncategory"
+							android:layout_width="240.0dp"
+							android:layout_height="wrap_content"
+							android:maxHeight="55dp"
+							android:minHeight="55dp" />
+						<LinearLayout
+							android:orientation="horizontal"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:minHeight="5px"
+							android:background="@color/color_header" />
+					</LinearLayout>
+				</RelativeLayout>
+					<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_marginTop="5dp"
+					android:layout_height="wrap_content">
+					<ImageView
+						android:src="@drawable/healthbuttonmoshavere64"
+						android:background="@drawable/roundedimagecategory"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_marginRight="10dp" />
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+						<Button
+							android:text="مشاوره"
+							android:paddingRight="80px"
+							android:id="@+id/healthbuttonmoshavere"
+							android:gravity="right|center"
+							android:textDirection="ltr"
+							android:background="@drawable/roundbuttoncategory"
+							android:layout_width="240.0dp"
+							android:layout_height="wrap_content"
+							android:maxHeight="55dp"
+							android:minHeight="55dp" />
+						<LinearLayout
+							android:orientation="horizontal"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:minHeight="5px"
+							android:background="@color/color_header" />
+					</LinearLayout>
+				</RelativeLayout>
+			</LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

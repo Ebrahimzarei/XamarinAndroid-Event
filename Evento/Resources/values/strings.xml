@@ -1,0 +1,16 @@
+<resources>
+  <string name="app_name">Eventoo</string>
+  <string name="action_settings">Settings</string>
+
+
+
+  <color name="button_pressed">#ff8a00</color>
+  <color name="button_focused">#ff8a00</color>
+  <color name="button_default">#ccabdb</color>
+
+  <color name="button_test">#311b92</color>
+  <color name="color_header">#ccabdb</color>
+  <color name="colorwhite">#fafafa</color>
+  <color name="colorkhaki">#eeeeee</color>
+
+</resources>

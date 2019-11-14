@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#eeeeee"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+		<LinearLayout
+			android:orientation="vertical"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:descendantFocusability="beforeDescendants"
+			android:focusableInTouchMode="true"
+			android:layout_height="match_parent"
+			android:background="#fafafa">
+			<LinearLayout
+				android:orientation="horizontal"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/color_header"
+				android:gravity="right">
+				<TextView
+					android:text="صفحه ثبت رویداد"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:textAlignment="center"
+					android:textColor="#fff3e8e8"
+					android:textStyle="bold"
+					android:textSize="23dp"
+					android:layout_marginRight="38dp"
+					android:gravity="center" />
+				<Button
+					android:text="بازگشت"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/entereventButtonBack"
+					android:textColor="#fafafa"
+					android:background="@null"
+					android:textSize="23dp"
+					android:textStyle="bold"
+					android:layout_gravity="left"
+					android:gravity="center_vertical|right" />
+				<Space
+					android:layout_width="10dp"
+					android:layout_height="match_parent"
+					android:layout_marginRight="0.0dp" />
+				<ImageView
+					android:id="@+id/enterebentimgviewback"
+					android:src="@drawable/whitenext24"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:scaleType="center"
+					android:layout_gravity="left"
+					android:layout_marginRight="15dp" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/roundfilter"
+				android:weightSum="2"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:layout_marginBottom="5dp"
+				android:layout_marginTop="5dp">
+				<Button
+					android:text="انتخاب شود"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:id="@+id/entereventbuttoncaption"
+					android:layout_weight="1"
+					android:textColor="#212121"
+					android:background="@drawable/selecteventroundleftbutton"
+					android:textSize="16dp" />
+				<TextView
+					android:text="موضوع رویداد"
+					android:textSize="16dp"
+					android:id="@+id/entereventtxtviewcaption"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_vertical"
+					android:textColor="#212121"
+					android:textStyle="bold"
+					android:layout_marginRight="6dp" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="110dp"
+				android:background="@drawable/roundtoplinearlayout"
+				android:weightSum="3"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:gravity="center">
+				<EditText
+					android:layout_width="wrap_content"
+					android:layout_height="56.5dp"
+					android:id="@+id/entereventeditTextCaption"
+					android:layout_weight="3"
+					android:inputType="text"
+					android:background="@drawable/bg_enterevent"
+					android:hint="بعنوان مثال نمایشگاه نقاشی"
+					android:layout_marginRight="6dp"
+					android:textColorHint="#616161"
+					android:gravity="center"
+					android:textColor="#212121"
+					android:textSize="16dp" />
+				<TextView
+					android:text="عنوان رویداد"
+					android:textSize="16dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_vertical"
+					android:textColor="#212121"
+					android:id="@+id/entereventtxtviewcaptionevent"
+					android:textStyle="bold"
+					android:layout_marginRight="6dp"
+					android:layout_width="wrap_content" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/roundbottomlinearlayout"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:gravity="right"
+				android:layout_marginBottom="5dp">
+				<EditText
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:editable="false"
+					android:background="@null"
+					android:id="@+id/enterevenedittextHelpCaption"
+					android:drawableStart="@drawable/cautionblack16" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="100dp"
+				android:background="@drawable/roundfilter"
+				android:layout_margin="3dp"
+				android:weightSum="3">
+				<Button
+					android:text="محله"
+					android:layout_width="wrap_content"
+					android:layout_height="54.5dp"
+					android:id="@+id/entereventbuttonLocal"
+					android:layout_weight="1"
+					android:textColor="#212121"
+					android:background="@drawable/selecteventroundleftbutton"
+					android:textSize="16dp" />
+				<Button
+					android:text="شیراز"
+					android:layout_width="wrap_content"
+					android:layout_height="54.5dp"
+					android:id="@+id/entereventbuttonshiraz"
+					android:layout_weight="1"
+					android:textColor="#212121"
+					android:background="@drawable/selecteventroundleftbutton"
+					android:layout_marginLeft="3dp"
+					android:textSize="16dp" />
+				<TextView
+					android:text="مکان رویداد"
+					android:textSize="16dp"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_vertical"
+					android:textColor="#212121"
+					android:id="@+id/entereventtxtviewplace"
+					android:textStyle="bold"
+					android:layout_marginRight="6dp" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="100dp"
+				android:background="@drawable/roundtoplinearlayout"
+				android:weightSum="3"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp">
+				<EditText
+					android:layout_width="wrap_content"
+					android:layout_height="56.5dp"
+					android:id="@+id/entereventeditTextAddres"
+					android:layout_weight="3"
+					android:background="@drawable/bg_enterevent"
+					android:hint="بعنوان مثال چمران کوچه 4 پلاک 10"
+					android:layout_marginRight="6dp"
+					android:textColorHint="#616161"
+					android:gravity="center"
+					android:textColor="#212121"
+					android:textSize="16dp" />
+				<TextView
+					android:text=" آدرس رویداد"
+					android:textSize="16dp"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_vertical"
+					android:textColor="#212121"
+					android:id="@+id/entereventtxtviewaddres"
+					android:textStyle="bold"
+					android:layout_marginRight="6dp" />
+			</LinearLayout>
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/roundbottomlinearlayout"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:layout_marginBottom="5dp">
+				<ImageView
+					android:src="@drawable/mapcolor32"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:id="@+id/entereventimageviewmap"
+					android:layout_alignParentLeft="true"
+					android:layout_alignParentTop="true"
+					android:layout_marginRight="330dp"
+					android:layout_marginBottom="5dp"
+					android:layout_marginLeft="1dp"
+					android:layout_weight="1" />
+				<EditText
+					android:layout_alignParentRight="true"
+					android:layout_alignParentTop="true"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:editable="false"
+					android:background="@null"
+					android:id="@+id/entereventedittextHelpAddress"
+					android:drawableStart="@drawable/cautionblack16" />
+			</RelativeLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="100dp"
+				android:background="@drawable/roundtoplinearlayout"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:weightSum="6">
+				<Button
+					android:text="تاریخ پایان"
+					android:layout_width="wrap_content"
+					android:layout_height="54.5dp"
+					android:id="@+id/entereventbuttotnTo"
+					android:layout_weight="2"
+					android:textColor="#212121"
+					android:background="@drawable/selecteventroundleftbutton"
+					android:textSize="16dp" />
+				<TextView
+					android:text="تا"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:textColor="#212121"
+					android:id="@+id/entereventtxtviewto" />
+				<Button
+					android:text="تاریخ شروع"
+					android:layout_width="wrap_content"
+					android:layout_height="54.5dp"
+					android:id="@+id/entereventbuttonFrom"
+					android:layout_weight="2"
+					android:textColor="#212121"
+					android:background="@drawable/selecteventroundleftbutton"
+					android:textSize="16dp" />
+				<TextView
+					android:text="از"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:textColor="#212121"
+					android:id="@+id/entereventtxtviewfrom" />
+				<TextView
+					android:text="زمان رویداد"
+					android:textSize="16dp"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_vertical"
+					android:textColor="#212121"
+					android:id="@+id/entereventtxtviewtime"
+					android:textStyle="bold"
+					android:layout_marginRight="6dp" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/roundbottomlinearlayout"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:gravity="right"
+				android:layout_marginBottom="3dp">
+				<EditText
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:background="@null"
+					android:editable="false"
+					android:drawableStart="@drawable/cautionblack16"
+					android:id="@+id/entereventeditexthelpTime" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="100dp"
+				android:background="@drawable/roundtoplinearlayout"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:weightSum="6">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:id="@+id/entereventtxtviewCaptionCost"
+					android:layout_weight="3"
+					android:textSize="18dp"
+					android:textStyle="bold"
+					android:layout_marginRight="6dp" />
+				<Button
+					android:text="انتخاب شود"
+					android:layout_width="wrap_content"
+					android:layout_height="54.5dp"
+					android:id="@+id/entereventbuttoncost"
+					android:layout_weight="2"
+					android:textColor="#212121"
+					android:background="@drawable/selecteventroundleftbutton"
+					android:textSize="16dp" />
+				<TextView
+					android:text="هزینه رویداد"
+					android:textSize="16dp"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_vertical"
+					android:textColor="#212121"
+					android:id="@+id/entereventtxtviewcost"
+					android:textStyle="bold"
+					android:layout_marginRight="6dp" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/roundbottomlinearlayout"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:gravity="right"
+				android:layout_marginBottom="3dp">
+				<EditText
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:background="@null"
+					android:editable="false"
+					android:drawableStart="@drawable/cautionblack16"
+					android:id="@+id/entereventeditexthelpcost" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="100dp"
+				android:background="@drawable/roundtoplinearlayout"
+				android:weightSum="3"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp">
+				<android.support.design.widget.TextInputEditText
+					android:layout_width="wrap_content"
+					android:layout_height="56.5dp"
+					android:id="@+id/entereventeditTextTel"
+					android:layout_weight="3"
+					android:background="@drawable/bg_enterevent"
+					android:hint="بعنوان مثال 09171234567"
+					android:layout_marginRight="6dp"
+					android:inputType="number"
+					android:textColorHint="#616161"
+					android:gravity="center"
+					android:textColor="#212121"
+					android:textSize="16dp" />
+				<TextView
+					android:text="تلفن تماس"
+					android:inputType="number"
+					android:textSize="16dp"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_vertical"
+					android:textColor="#212121"
+					android:id="@+id/entereventtxtviewtel"
+					android:textStyle="bold"
+					android:layout_marginRight="6dp" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/roundbottomlinearlayout"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:layout_marginBottom="3dp"
+				android:gravity="right">
+				<EditText
+					android:layout_width="wrap_content"
+					android:drawableStart="@drawable/cautionblack16"
+					android:layout_height="match_parent"
+					android:editable="false"
+					android:background="@null"
+					android:id="@+id/enteteventedittexthelptel" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="100dp"
+				android:background="@drawable/roundtoplinearlayout"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:weightSum="3">
+				<EditText
+					android:layout_width="wrap_content"
+					android:layout_height="56.5dp"
+					android:id="@+id/entereventeditTextUrl"
+					android:layout_weight="3"
+					android:background="@drawable/bg_enterevent"
+					android:hint="www.google.comبعنوان مثال"
+					android:inputType="textUri"
+					android:layout_marginRight="6dp"
+					android:textColorHint="#616161"
+					android:gravity="center"
+					android:textColor="#212121"
+					android:textSize="16dp" />
+				<TextView
+					android:text="آدرس اینترنتی"
+					android:textSize="16dp"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_vertical"
+					android:textColor="#212121"
+					android:id="@+id/entereventtxtviewurl"
+					android:textStyle="bold"
+					android:layout_marginRight="6dp" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/roundbottomlinearlayout"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:layout_marginBottom="3dp"
+				android:gravity="right">
+				<EditText
+					android:layout_width="wrap_content"
+					android:editable="false"
+					android:background="@null"
+					android:drawableStart="@drawable/cautionblack16"
+					android:layout_height="match_parent"
+					android:id="@+id/entereventeditexthelpurl" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="130dp"
+				android:background="@drawable/roundtoplinearlayout"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:weightSum="3">
+				<EditText
+					android:layout_width="wrap_content"
+					android:layout_height="56.5dp"
+					android:id="@+id/entereventeditTextdesc"
+					android:layout_weight="3"
+					android:background="@drawable/bg_enterevent"
+					android:hint="رویداد خود را بطور کامل توضیح دهید"
+					android:layout_marginRight="6dp"
+					android:textColorHint="#616161"
+					android:gravity="center"
+					android:textColor="#212121"
+					android:textSize="16dp" />
+				<TextView
+					android:text="توضیحات"
+					android:textStyle="bold"
+					android:textSize="16dp"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_vertical"
+					android:textColor="#212121"
+					android:id="@+id/entereventtxtviewdescription"
+					android:layout_marginRight="6dp" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/roundbottomlinearlayout"
+				android:layout_marginLeft="3dp"
+				android:layout_marginBottom="1dp"
+				android:layout_marginRight="3dp"
+				android:gravity="right">
+				<EditText
+					android:layout_width="wrap_content"
+					android:editable="false"
+					android:background="@null"
+					android:drawableStart="@drawable/cautionblack16"
+					android:layout_height="match_parent"
+					android:id="@+id/entereventeditexthelpdescription" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/roundtoplinearlayout"
+				android:weightSum="2"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:gravity="center"
+				android:layout_gravity="center"
+				android:layout_marginTop="5dp">
+				<Button
+					android:text="تصویر اصلی"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:id="@+id/entereventbuttoncamera"
+					android:layout_weight="1"
+					android:layout_marginLeft="5dp"
+					android:layout_marginRight="5dp"
+					android:layout_marginBottom="5dp"
+					android:layout_marginTop="5dp"
+					android:textColor="#212121"
+					android:gravity="center"
+					android:layout_gravity="center"
+					android:background="@drawable/selecteventroundleftbutton"
+					android:textSize="16dp" />
+				<TextView
+					android:text="تصویر رویداد"
+					android:textSize="16dp"
+					android:id="@+id/entereventtxtviewphoto"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_vertical"
+					android:textColor="#212121"
+					android:textStyle="bold"
+					android:layout_marginRight="6dp" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/roundbottomlinearlayout"
+				android:layout_marginLeft="3dp"
+				android:layout_marginBottom="3dp"
+				android:layout_marginRight="3dp"
+				android:gravity="right">
+				<EditText
+					android:layout_width="wrap_content"
+					android:editable="false"
+					 
+					android:background="@null"
+					android:drawableStart="@drawable/cautionblack16"
+					android:layout_height="match_parent"
+					android:id="@+id/entereventedttexthelpcamera" />
+			</LinearLayout>
+
+				<LinearLayout
+				android:orientation="horizontal"
+				android:id="@+id/entereventlinearlayoutLonging"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/roundtoplinearlayout"
+				android:weightSum="2"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:gravity="center"
+				android:layout_gravity="center"
+				android:layout_marginTop="5dp">
+				<Button
+					android:text="جنبه رویداد"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:id="@+id/entereventbuttonLonging"
+					android:layout_weight="1"
+					android:layout_marginLeft="5dp"
+					android:layout_marginRight="5dp"
+					android:layout_marginBottom="5dp"
+					android:layout_marginTop="5dp"
+					android:textColor="#212121"
+					android:gravity="center"
+					android:layout_gravity="center"
+					android:background="@drawable/selecteventroundleftbutton"
+					android:textSize="16dp" />
+				<TextView
+					android:text="جنبه رویداد"
+					android:textSize="16dp"
+					android:id="@+id/entereventtxtviewLonging"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_vertical"
+					android:textColor="#212121"
+					android:textStyle="bold"
+					android:layout_marginRight="6dp" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/roundbottomlinearlayout"
+				android:layout_marginLeft="3dp"
+				android:layout_marginBottom="3dp"
+				android:layout_marginRight="3dp"
+				 android:id="@+id/entereventlonginghelplonging"
+				android:gravity="right">
+				<EditText
+					android:layout_width="wrap_content"
+					android:editable="false"
+					android:background="@null"
+					
+					android:drawableStart="@drawable/cautionblack16"
+					android:layout_height="match_parent"
+					android:id="@+id/entereventedttexthelplonging" />
+			</LinearLayout>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:editable="false"
+				android:background="@null"
+				android:text="تصویر اصلی"
+				android:layout_marginLeft="75dp"
+				android:layout_gravity="left"
+				android:textSize="16dp"
+				android:textStyle="bold"
+				android:layout_weight="1"
+				android:visibility="invisible"
+				android:id="@+id/entereventtextviewdefaultimage"
+				android:layout_height="match_parent"
+                     />
+			<android.support.v7.widget.RecyclerView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/entereventRecyclerViewcameras"
+				android:layout_margin="5dp"
+				android:minWidth="25px"
+				android:minHeight="20px" >
+			</android.support.v7.widget.RecyclerView>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:background="@color/color_header"
+				android:layout_height="wrap_content">
+				<ImageView
+					android:src="@drawable/tickwhitelarge24"
+					android:layout_width="32.0dp"
+					android:scaleType="center"
+					 android:paddingRight="15dp"
+					android:visibility="gone"
+					android:id="@+id/entereventimageviewSends"
+					android:layout_marginLeft="20dp"
+					android:layout_height="match_parent" />
+	 
+				<Button
+					android:text="ارسال"
+					android:layout_width="140dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					 android:drawableLeft="@drawable/tickwhitelarge24"
+					android:textColor="#fafafa"
+					android:background="@drawable/bg_foterbutton"
+					android:textSize="23dp"
+					android:drawablePadding="15dip"
+					android:textStyle="bold"
+					android:layout_marginLeft="14dp"
+					android:id="@+id/entereventbuttonSend"
+					android:gravity="left|center_vertical" />
+				<Button
+					android:text="ذخیره"
+					android:layout_width="130dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:id="@+id/entereventbuttonsave"
+					android:textColor="#fafafa"
+					android:background="@drawable/bg_foterbutton"
+					android:textSize="23dp"
+					android:textStyle="bold"
+					android:drawableRight="@drawable/savewhite24"
+					android:drawablePadding="15dip"
+					android:layout_marginRight="14dp"
+					android:gravity="center_vertical" />
+			 
+				<ImageView
+					android:src="@drawable/savewhite24"
+					android:layout_width="32.0dp"
+					android:visibility="gone"
+					android:scaleType="center"
+					android:paddingLeft="15dp"
+					android:layout_marginRight="20dp"
+					android:layout_height="match_parent" />
+			</LinearLayout>
+		</LinearLayout>
+    </ScrollView>
+</LinearLayout>

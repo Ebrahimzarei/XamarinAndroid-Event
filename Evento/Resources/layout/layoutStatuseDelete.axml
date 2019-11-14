@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	 android:id="@+id/statusedeltelinearlayout"
+    android:background="#e0e0e0">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:background="#bdbdbd">
+        <TextView
+            android:text="علت حذف"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/statusedeletetxtviewcaption"
+            android:textColor="#212121"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center" />
+    </LinearLayout>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/statusedelterchkboxnotevent"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:text="رویداد برگزار نشد"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#212121" />
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:text=" رویداد با موفقیت برگزار شد"
+        android:id="@+id/statusedeletechknotokeyevent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:textColor="#212121" />
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=" بی خیالش شدم"
+        android:id="@+id/statusedeletechkcancell"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="19dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textStyle="bold"
+        android:textColor="#212121" />
+    <Button
+        android:text="تایید"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selecteventroundleftbutton"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/statusedeletebuttonenter"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#212121" />
+</LinearLayout>
+	</ScrollView>

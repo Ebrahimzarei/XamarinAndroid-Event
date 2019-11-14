@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#eeeeee"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+		<LinearLayout
+			android:orientation="vertical"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:descendantFocusability="beforeDescendants"
+			android:focusableInTouchMode="true"
+			android:layout_height="match_parent"
+			android:background="#fafafa">
+			<LinearLayout
+				android:orientation="horizontal"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/color_header"
+				android:gravity="right">
+				<Button
+					android:text="بازگشت"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/editmyeventButtonBack"
+					android:textColor="#fafafa"
+					android:background="@null"
+					android:textSize="23dp"
+					android:textStyle="bold"
+					android:layout_gravity="left"
+					android:gravity="center_vertical|right" />
+				<Space
+					android:layout_width="10dp"
+					android:layout_height="match_parent"
+					android:layout_marginRight="0.0dp" />
+				<ImageView
+					android:src="@drawable/whitenext24"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:id="@+id/editmyeventimgviewback"
+					android:scaleType="fitCenter"
+					android:layout_gravity="left"
+					android:layout_marginRight="15dp" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/roundfilter"
+				android:weightSum="2"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:layout_marginBottom="5dp"
+				android:layout_marginTop="5dp">
+				<Button
+					android:text="مردمی-حراجی"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:id="@+id/editmyeventbuttoncaption"
+					android:layout_weight="1"
+					android:textColor="#212121"
+					android:background="@drawable/selecteventroundleftbutton"
+					android:textSize="16dp" />
+				<TextView
+					android:text="موضوع رویداد"
+					android:textSize="16dp"
+					android:id="@+id/editmyeventtxtviewcaption"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_vertical"
+					android:textColor="#212121"
+					android:textStyle="bold"
+					android:layout_marginRight="6dp" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="110dp"
+				android:background="@drawable/roundtoplinearlayout"
+				android:weightSum="3"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:gravity="center">
+				<EditText
+					android:layout_width="wrap_content"
+					android:layout_height="56.5dp"
+					android:id="@+id/editmyeventeditTextCaption"
+					android:layout_weight="3"
+					android:inputType="text"
+					android:text="نمایشگاه نقاشی"
+					android:background="@drawable/bg_enterevent"
+					android:hint="بعنوان مثال نمایشگاه نقاشی"
+					android:layout_marginRight="6dp"
+					android:gravity="center"
+					android:textColorHint="#616161"
+					android:textColor="#212121"
+					android:textSize="16dp" />
+				<TextView
+					android:text="عنوان رویداد"
+					android:textSize="16dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_vertical"
+					android:textColor="#212121"
+					android:id="@+id/editmyeventtxtviewcaptionevent"
+					android:textStyle="bold"
+					android:layout_marginRight="6dp"
+					android:layout_width="wrap_content" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/roundbottomlinearlayout"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:gravity="right"
+				android:layout_marginBottom="5dp">
+				<EditText
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:editable="false"
+					android:id="@+id/editmteventedittextHelpCaption"
+					android:drawableStart="@drawable/cautionblack16"
+					android:background="@null" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="100dp"
+				android:background="@drawable/roundfilter"
+				android:layout_margin="3dp"
+				android:weightSum="3">
+				<Button
+					android:text="ارتش"
+					android:layout_width="wrap_content"
+					android:layout_height="54.5dp"
+					android:id="@+id/editmyeventbuttonLocal"
+					android:layout_weight="1"
+					android:textColor="#212121"
+					android:background="@drawable/selecteventroundleftbutton"
+					android:textSize="16dp" />
+				<Button
+					android:text="شیراز"
+					android:layout_width="wrap_content"
+					android:layout_height="54.5dp"
+					android:id="@+id/editmyeventbuttonshiraz"
+					android:layout_weight="1"
+					android:textColor="#212121"
+					android:background="@drawable/selecteventroundleftbutton"
+					android:layout_marginLeft="3dp"
+					android:textSize="16dp" />
+				<TextView
+					android:text="مکان رویداد"
+					android:textSize="16dp"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_vertical"
+					android:textColor="#212121"
+					android:id="@+id/editmyeventtxtviewplace"
+					android:textStyle="bold"
+					android:layout_marginRight="6dp" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="100dp"
+				android:background="@drawable/roundtoplinearlayout"
+				android:weightSum="3"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp">
+				<EditText
+					android:layout_width="wrap_content"
+					android:layout_height="56.5dp"
+					android:id="@+id/editmyeventeditTextAddres"
+					android:layout_weight="3"
+					android:background="@drawable/bg_enterevent"
+					android:text="چمران کوچه 4 پلاک 10"
+					android:hint="بعنوان مثال چمران کوچه 4 پلاک 10"
+					android:layout_marginRight="6dp"
+					android:textColorHint="#616161"
+					android:gravity="center"
+					android:textColor="#212121"
+					android:textSize="16dp" />
+				<TextView
+					android:text=" آدرس رویداد"
+					android:textSize="16dp"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_vertical"
+					android:textColor="#212121"
+					android:id="@+id/editmyeventtxtviewaddres"
+					android:textStyle="bold"
+					android:layout_marginRight="6dp" />
+			</LinearLayout>
+			<RelativeLayout
+				android:layout_width="fill_parent"
+				android:background="@drawable/roundbottomlinearlayout"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:layout_marginBottom="5dp"
+				android:layout_height="fill_parent">
+				<ImageView
+					android:id="@+id/editeventimageviewmap"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_alignParentTop="true"
+					android:src="@drawable/mapcolor32"
+					android:layout_marginBottom="5dp" />
+				<EditText
+					android:id="@+id/editmyeventedittextHelpAddress"
+					android:drawableStart="@drawable/cautionblack16"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_alignParentTop="true"
+					android:editable="false"
+					android:background="@null" />
+			</RelativeLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="100dp"
+				android:background="@drawable/roundtoplinearlayout"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:weightSum="6">
+				<Button
+					android:text="26تیر 97"
+					android:layout_width="wrap_content"
+					android:layout_height="54.5dp"
+					android:id="@+id/editmyeventbuttotnTo"
+					android:layout_weight="2"
+					android:textColor="#212121"
+					android:background="@drawable/selecteventroundleftbutton"
+					android:textSize="16dp" />
+				<TextView
+					android:text="تا"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:textColor="#212121"
+					android:id="@+id/editmyeventtxtviewto" />
+				<Button
+					android:text="28تیر 97"
+					android:layout_width="wrap_content"
+					android:layout_height="54.5dp"
+					android:id="@+id/editmyeventbuttonFrom"
+					android:layout_weight="2"
+					android:textColor="#212121"
+					android:background="@drawable/selecteventroundleftbutton"
+					android:textSize="16dp" />
+				<TextView
+					android:text="از"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:textColor="#212121"
+					android:id="@+id/editmyeventtxtviewfrom" />
+				<TextView
+					android:text="زمان رویداد"
+					android:textSize="16dp"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_vertical"
+					android:textColor="#212121"
+					android:id="@+id/editmyeventtxtviewtime"
+					android:textStyle="bold"
+					android:layout_marginRight="6dp" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/roundbottomlinearlayout"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:gravity="right"
+				android:layout_marginBottom="3dp">
+				<EditText
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:editable="false"
+					android:drawableStart="@drawable/cautionblack16"
+					android:id="@+id/editmyeventeditexthelpTime"
+					android:background="@null" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="100dp"
+				android:background="@drawable/roundtoplinearlayout"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:weightSum="6">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:id="@+id/editmyeventtxtviewCaptionCost"
+					android:layout_weight="3"
+					android:textSize="18dp"
+					android:textStyle="bold"
+					android:layout_marginRight="6dp" />
+				<Button
+					android:text="رایگان"
+					android:layout_width="wrap_content"
+					android:layout_height="54.5dp"
+					android:id="@+id/editmyeventbuttoncost"
+					android:layout_weight="2"
+					android:textColor="#212121"
+					android:background="@drawable/selecteventroundleftbutton"
+					android:textSize="16dp" />
+				<TextView
+					android:text="هزینه رویداد"
+					android:textSize="16dp"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_vertical"
+					android:textColor="#212121"
+					android:id="@+id/editmyeventtxtviewcost"
+					android:textStyle="bold"
+					android:layout_marginRight="6dp" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/roundbottomlinearlayout"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:gravity="right"
+				android:layout_marginBottom="3dp">
+				<EditText
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:editable="false"
+					android:background="@null"
+					android:drawableStart="@drawable/cautionblack16"
+					android:id="@+id/editmyeventeditexthelpcost" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="100dp"
+				android:background="@drawable/roundtoplinearlayout"
+				android:weightSum="3"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp">
+				<EditText
+					android:layout_width="wrap_content"
+					android:layout_height="56.5dp"
+					android:id="@+id/editmyeventeditTextTel"
+					android:layout_weight="3"
+					android:background="@drawable/bg_enterevent"
+					android:hint="بعنوان مثال 09171234567"
+					android:text="09171234567"
+					android:layout_marginRight="6dp"
+					android:inputType="number"
+					android:textColorHint="#616161"
+					android:gravity="center"
+					android:textColor="#212121"
+					android:textSize="16dp" />
+				<TextView
+					android:text="تلفن تماس"
+					android:inputType="number"
+					android:textSize="16dp"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_vertical"
+					android:textColor="#212121"
+					android:id="@+id/editmyeventtxtviewtel"
+					android:textStyle="bold"
+					android:layout_marginRight="6dp" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/roundbottomlinearlayout"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:layout_marginBottom="3dp"
+				android:gravity="right">
+				<EditText
+					android:layout_width="wrap_content"
+					android:drawableStart="@drawable/cautionblack16"
+					android:layout_height="match_parent"
+					android:background="@null"
+					android:editable="false"
+					android:id="@+id/enteteventedittexthelptel" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="100dp"
+				android:background="@drawable/roundtoplinearlayout"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:weightSum="3">
+				<EditText
+					android:layout_width="wrap_content"
+					android:layout_height="56.5dp"
+					android:id="@+id/editmyeventeditTextUrl"
+					android:layout_weight="3"
+					android:background="@drawable/bg_enterevent"
+					android:hint="www.google.comبعنوان مثال"
+					android:text="www.gsm.ir"
+					android:inputType="textUri"
+					android:layout_marginRight="6dp"
+					android:textColorHint="#616161"
+					android:gravity="center"
+					android:textColor="#212121"
+					android:textSize="16dp" />
+				<TextView
+					android:text="آدرس اینترنتی"
+					android:textSize="16dp"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_vertical"
+					android:textColor="#212121"
+					android:id="@+id/editmyeventtxtviewurl"
+					android:textStyle="bold"
+					android:layout_marginRight="6dp" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/roundbottomlinearlayout"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:layout_marginBottom="3dp"
+				android:gravity="right">
+				<EditText
+					android:layout_width="wrap_content"
+					android:editable="false"
+					android:background="@null"
+					android:drawableStart="@drawable/cautionblack16"
+					android:layout_height="match_parent"
+					android:id="@+id/editmyeventeditexthelpurl" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="130dp"
+				android:background="@drawable/roundtoplinearlayout"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:weightSum="3">
+				<EditText
+					android:layout_width="wrap_content"
+					android:layout_height="56.5dp"
+					android:id="@+id/editmyeventeditTextdesc"
+					android:layout_weight="3"
+					android:background="@drawable/bg_enterevent"
+					android:hint="توضیحات را وارد نمایید"
+					android:text="شرایط پرادخت هزینه در زمان تماس توضیح داده میشود"
+					android:layout_marginRight="6dp"
+					android:textColorHint="#616161"
+					android:gravity="center"
+					android:textColor="#212121"
+					android:textSize="16dp" />
+				<TextView
+					android:text="توضیحات"
+					android:textStyle="bold"
+					android:textSize="16dp"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_vertical"
+					android:textColor="#212121"
+					android:id="@+id/editmyeventtxtviewdescription"
+					android:layout_marginRight="6dp" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/roundbottomlinearlayout"
+				android:layout_marginLeft="3dp"
+				android:layout_marginBottom="3dp"
+				android:layout_marginRight="3dp"
+				android:gravity="right">
+				<EditText
+					android:layout_width="wrap_content"
+					android:editable="false"
+					android:background="@null"
+					android:drawableStart="@drawable/cautionblack16"
+					android:layout_height="match_parent"
+					android:id="@+id/editmyeventeditexthelpdescription" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/roundtoplinearlayout"
+				android:weightSum="2"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:gravity="center"
+				android:layout_gravity="center"
+				android:layout_marginTop="5dp">
+				<Button
+					android:text="تصویر اصلی"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:id="@+id/editmyeventbuttoncamera"
+					android:layout_weight="1"
+					android:layout_marginLeft="5dp"
+					android:layout_marginRight="5dp"
+					android:layout_marginBottom="5dp"
+					android:layout_marginTop="5dp"
+					android:textColor="#212121"
+					android:gravity="center"
+					android:layout_gravity="center"
+					android:background="@drawable/selecteventroundleftbutton"
+					android:textSize="16dp" />
+				<TextView
+					android:text="تصویر رویداد"
+					android:textSize="16dp"
+					android:id="@+id/editmyeventtxtviewphoto"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center_vertical"
+					android:textColor="#212121"
+					android:textStyle="bold"
+					android:layout_marginRight="6dp" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/roundbottomlinearlayout"
+				android:layout_marginLeft="3dp"
+				android:layout_marginBottom="3dp"
+				android:layout_marginRight="3dp"
+				android:gravity="right">
+				<EditText
+					android:layout_width="wrap_content"
+					android:editable="false"
+					android:background="@null"
+					android:drawableStart="@drawable/cautionblack16"
+					android:layout_height="match_parent"
+					android:id="@+id/editmyeventedttexthelpcamera" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/editmyeventlinearLayoutcamera"
+				android:background="@null"
+				android:weightSum="2"
+				android:layout_margin="5dp"
+				android:minWidth="25px"
+				android:minHeight="25px" />
+			<LinearLayout
+				android:orientation="horizontal"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:background="@color/color_header"
+				android:layout_height="wrap_content">
+				<ImageView
+					android:src="@drawable/tickwhitelarge24"
+					android:layout_width="20dp"
+					android:scaleType="center"
+					android:id="@+id/editmyeventimageviewSend"
+					android:layout_marginLeft="20dp"
+					android:layout_height="match_parent" />
+				<Space
+					android:layout_width="9.0dp"
+					android:layout_height="match_parent" />
+				<Button
+					android:text="ثبت تغییرات"
+					android:layout_width="140dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:textColor="#fafafa"
+					android:background="@drawable/bg_foterbutton"
+					android:textSize="15dp"
+					android:textStyle="bold"
+					android:id="@+id/editmyeventbuttonSend"
+					android:gravity="left|center_vertical" />
+				<Button
+					android:text="حذف"
+					android:layout_width="130dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:id="@+id/editmyeventbuttondelete"
+					android:textColor="#fafafa"
+					android:background="@drawable/bg_foterbutton"
+					android:textSize="15dp"
+					android:textStyle="bold"
+					android:gravity="center_vertical" />
+				<Space
+					android:layout_width="9.5dp"
+					android:layout_height="match_parent" />
+				<ImageView
+					android:src="@drawable/closewhitelarge24"
+					android:layout_width="20dp"
+					android:id="@+id/editmyeventimageviewclose"
+					android:layout_marginRight="20dp"
+					android:layout_height="match_parent" />
+			</LinearLayout>
+		</LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+     
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+		android:id="@+id/filtermainlinearlayout"
+    android:background="#eeeeee">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:background="#311b92">
+        <TextView
+            android:text="فیلتر"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/filtermaintxtviewcaption"
+            android:background="#bdbdbd"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center" />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:id="@+id/filtermainbtndate"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:text=" براساس تاریخ رویداد"
+        android:background="@drawable/selecteventroundleftbutton"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#212121" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:gravity="center"
+        android:text=" بر اساس محله"
+        android:id="@+id/filtermainbtnplace"
+        android:background="@drawable/selecteventroundleftbutton"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:textColor="#212121" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=" بر اساس هزینه رویداد"
+        android:id="@+id/filtermainbtneventcost"
+        android:background="@drawable/selecteventroundleftbutton"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="19dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textStyle="bold"
+        android:textColor="#212121" />
+    <Button
+        android:text="تایید"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbuttonenterfilter"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/filtermainbtnٍenter"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#fafafa" />
+</LinearLayout>
+	</ScrollView>

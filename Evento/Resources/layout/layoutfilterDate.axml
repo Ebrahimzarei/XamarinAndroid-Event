@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:id="@+id/filterdatelinearlayout"
+    android:background="#eeeeee">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:background="#bdbdbd">
+        <TextView
+            android:text="فیلتر بر اساس تاریخ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/filterdatetxtviewcaption"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:gravity="center" />
+    </LinearLayout>
+    <Button
+        android:text="امروز"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selecteventroundleftbutton"
+        android:id="@+id/filterdatetxtnowday"
+        android:textColor="#212121"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    <Button
+        android:text="فردا"
+        android:layout_width="match_parent"
+        android:background="@drawable/selecteventroundleftbutton"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/filterdatebtntommorow"
+        android:textColor="#212121"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    <Button
+        android:text="تقویم رویداد"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/selecteventroundleftbutton"
+        android:textColor="#212121"
+        android:id="@+id/filterdatebtncalendar"
+        android:textStyle="bold"
+        android:textSize="18dp" />
+</LinearLayout>
+	</ScrollView>

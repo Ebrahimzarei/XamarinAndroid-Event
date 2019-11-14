@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_light">
+<!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorwhite">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_header"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:weightSum="4"
+            android:layout_alignParentTop="true"
+            android:fadeScrollbars="true">
+            <Button
+                android:text="ثبت رویداد"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedbuttonallenterevent"
+                android:textColor="#311b92"
+                android:textSize="13dp"
+                android:gravity="center"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:id="@+id/cultrualcongreesbtnenterevent"
+                android:foregroundGravity="center"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp" />
+            <TextView
+                android:text="همایش و مراسم"
+                android:layout_width="147.5dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:id="@+id/cultrualcongreestxtviewgroup"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:gravity="center" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/logo2"
+                android:layout_column="1"
+                android:layout_marginTop="8dp"
+                android:id="@+id/cultrualcongreesimgbtnlogo"
+                android:layout_weight="1"
+                android:layout_marginRight="8dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:textColor="@android:color/white"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundfilter"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="3dp">
+            <Button
+                android:text="فیلتر"
+                android:gravity="center"
+                android:layout_width="52.0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:textSize="13dp"
+                android:id="@+id/cultrualcongreesbtnfilter"
+                android:background="@drawable/round_button"
+                android:textColor="#fafafa"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp" />
+            <Button
+                android:layout_width="44.5dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:textSize="13dp"
+                android:drawableEnd="@drawable/searchblack24"
+                android:background="@null"
+                android:id="@+id/cultrualcongreesbtnsearch"
+                android:visibility="gone" />
+            <Button
+                android:layout_column="1"
+                android:layout_width="43.5dp"
+                android:layout_height="match_parent"
+                android:textSize="13dp"
+                android:drawableEnd="@drawable/deletetexbalck24"
+                android:background="@null"
+                android:id="@+id/cultrualcongreesbtndelete"
+                android:visibility="gone" />
+            <EditText
+                android:layout_column="1"
+                android:background="@drawable/edittext_bg"
+                android:hint="جستجو در ایونتو..."
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:layout_marginRight="12dp"
+                android:id="@+id/cultrualcongreesedtxtsearch" />
+        </LinearLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:id="@+id/cultrualcongreeslstevent" />
+    </LinearLayout>
+<!--</ScrollView>-->
+    <LinearLayout
+        android:id="@+id/cultrualcongreesbottom_panel"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <Button
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="اطلاعات من"
+            android:background="@drawable/roundleftfooter"
+            android:textColor="@android:color/white"
+            android:id="@+id/cultrualcongreesbtnContact"
+            android:drawableTop="@drawable/manuser24white"
+            android:padding="3dip" />
+        <Button
+            tools:visibility="visible"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/flash24"
+            android:layout_height="wrap_content"
+            android:text="پیشنهاد ویژه"
+            android:background="@drawable/bg_foterbutton"
+            android:textColor="@android:color/white"
+            android:id="@+id/cultrualcongreesbtngift"
+            android:padding="3dip" />
+        <Button
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/day24rotaed"
+            android:layout_height="wrap_content"
+            android:text="رویداد های امروز"
+            android:background="@drawable/bg_foterbutton"
+            android:textColor="@android:color/white"
+            android:id="@+id/cultrualcongreesbtnEventDay"
+            android:padding="3dip" />
+        <Button
+            android:layout_width="0dip"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:drawableTop="@drawable/menu24white"
+            android:layout_height="wrap_content"
+            android:text="دسته بندی"
+            android:textColor="@android:color/white"
+            android:id="@+id/cultrualcongreesbtngroupingGrouping"
+            android:padding="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/roundrightfooter" />
+    </LinearLayout>
+</RelativeLayout>
